@@ -8,8 +8,9 @@ if [ $# -lt 1 ];then
         exit 1
 fi
 
-BIOS=$1
-CARD_NUMBER=$2
+MODE=$1
+BIOS=$2
+CARD_NUMBER=$3
 
 function stop_mining(){
         echo "stop mining"
@@ -38,7 +39,7 @@ function flash_specific_card(){
 }
 
 
-case $COUNTRY in
+case $MODE in
 
   1)
     flash_all_cards
