@@ -12,4 +12,4 @@ OUTPUT_FILE=$3
 killall screen
 sudo service cron stop
 /usr/local/bin/rw /mnt/user
-sudo /root/utils/atiflash -s $GRAPHICS_CARD_ID  $OUTPUT_DIR/$OUTPUT_FILE.rom
+sudo /root/utils/atiflash -s $GRAPHICS_CARD_ID  $OUTPUT_DIR/$OUTPUT_FILE
